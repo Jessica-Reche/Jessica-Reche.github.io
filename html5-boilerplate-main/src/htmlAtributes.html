@@ -65,51 +65,34 @@
         
        
         <h2>Que puedes hacer con javaScript?</h2>
+        <p>Puedes cambiar el atributo src</p>
 
-        <p id="demo">puedes cambiar el contenido html.</p>
+        <image id="demo" src="./icon.png"></image>
         
-        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+        <button type="button" onclick='document.getElementById("demo").src = "./favicon.ico"'>Click Me!</button>
 
 
-           
         <h2>Que puedes hacer con javaScript?</h2>
+        <p>Puedes eliminar atributos</p>
 
-        <p id="demoText">puedes cambiar visualizar el contenido de diferentes fuentes</p>
-        <form>
-            <input id="inputChange" type="text"></input>
-            <button type="button" onclick=visualizarText()>click me!</button>
-            <script>
-               function visualizarText(){
-                    var text = document.getElementById("inputChange").value;
-                    document.getElementById("demoText").innerHTML = text;
-                }
-            </script>
-        </form>
+        <image id="demo-eliminar" src="./favicon.ico"></image>
         
-        
+        <button type="button" onclick='document.getElementById("demo-eliminar").removeAttribute("src")'>Click Me!</button>
 
-
-                   
         <h2>Que puedes hacer con javaScript?</h2>
+        <p>Puedes modificar la anchura</p>
 
+        <image id="demo-width" src="./favicon.ico"></image>
         
-        <div id="container">
-            <p id="demo-p">También puedes crear elementos html</p>
-        <button type="button" onclick="crearElemento()">Click Me!</button>
-        </div>
+        <button type="button" onclick='document.getElementById("demo-width").width=60'>Click Me!</button>
+
+       
         
-        <script>
 
 
-            function crearElemento(){
-                var container = document.getElementById("container");
-                var p = document.createElement("p");
-                p.innerHTML = "Nuevo parrafo";
-                container.appendChild(p);
-            }
-      
-        </script>
-      
+
+
+
 
         
 
